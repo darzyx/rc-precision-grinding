@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Grid, Header, Segment } from 'semantic-ui-react';
+import LazyLoad from 'react-lazyload';
 
 class Contact extends Component {
   render() {
@@ -17,18 +18,20 @@ class Contact extends Component {
                 </Grid.Column>
                 <Grid.Column>
                   <Segment basic textAlign='center'>
-                    <div className='animated infinite pulse text-container'>
-                      <Header inverted>
-                        <a href='tel:16618396248'>
-                          (661) 839-6248
-                        </a>
-                      </Header>
-                      <Header inverted>
-                        <a href='mailto:rcurieltopete57@gmail.com'>
-                          rcurieltopete57@gmail.com
-                        </a>
-                      </Header>
-                    </div>
+                    <LazyLoad height={100}>
+                      <div className='animated pulse text-container'>
+                        <Header inverted>
+                          <a href='tel:16618396248'>
+                            (661) 839-6248
+                          </a>
+                        </Header>
+                        <Header inverted>
+                          <a href='mailto:rcurieltopete57@gmail.com'>
+                            rcurieltopete57@gmail.com
+                          </a>
+                        </Header>
+                      </div>
+                    </LazyLoad>
                   </Segment>
                 </Grid.Column>
               </Grid.Row>

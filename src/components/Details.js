@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Grid, Image, Segment } from 'semantic-ui-react';
+import LazyLoad from 'react-lazyload';
 
 const sampleProducts = require('../media/sample-products.jpg');
 
@@ -12,7 +13,9 @@ class Details extends Component {
             <Grid stackable verticalAlign='middle'>
               <Grid.Row>
                 <Grid.Column width={8}>
-                  <Image src={sampleProducts} />
+                  <LazyLoad height={500}>
+                    <Image className='animated fadeIn' src={sampleProducts} />
+                  </LazyLoad>
                   <p><i>Sample Products</i></p>
                 </Grid.Column>
                 <Grid.Column width={8}>
