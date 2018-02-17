@@ -1,0 +1,15 @@
+{
+  "short_name": "RCPG",
+  "name": "RC Precision Grinding",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "600x401",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
