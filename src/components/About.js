@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Grid, Image, Segment } from 'semantic-ui-react';
+import LazyLoad from 'react-lazyload';
 
 const portrait = require('../media/portrait.png');
 
@@ -29,7 +30,9 @@ class About extends Component {
                   </div>
                 </Grid.Column>
                 <Grid.Column width={8}>
-                  <Image src={portrait} />
+                  <LazyLoad height={500}>
+                    <Image src={portrait} />
+                  </LazyLoad>
                 </Grid.Column>
               </Grid.Row>
             </Grid>

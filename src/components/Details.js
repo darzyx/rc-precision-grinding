@@ -22,7 +22,7 @@ class Details extends Component {
                   <div className='text-container'>
                     <h2 className='section-header'>Further Details</h2>
                     <p>
-                      RC Precision Grinding is an streamlined one man operation
+                      RC Precision Grinding is a streamlined one man operation
                       serving the Southern California area. RC Precision Grinding
                       specializes in crafting parts such as input shafts, crank
                       assy, pistons, angular parts, spherical radius parts, and
